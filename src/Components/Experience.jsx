@@ -16,7 +16,7 @@ function Experience() {
     {
       role: "React Devloper (Internship)",
       company: "Solvify Tech, Surat",
-      period: " August-2024 - February-2025",
+      period: " August-2025 - February-2026",
       bullets: [
         "Developed and maintained Attendance Management and Task Management modules using React.js, implementing responsive user interfaces and CRUD functionality.",
         "Integrated REST APIs using Axios, implemented search, filtering, pagination, and collaborated with the backend team to deliver a seamless user experience.",

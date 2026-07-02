@@ -21,6 +21,14 @@ function Hero() {
     visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
   };
 
+  const handleContactClick = (e) => {
+    e.preventDefault();
+    const targetElement = document.getElementById("contact");
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section
       id="hero"
@@ -92,6 +100,7 @@ function Hero() {
           >
             <a
               href="#contact"
+              onClick={handleContactClick}
               className="bg-indigo-600 text-white hover:bg-indigo-700 px-6 py-2.5 rounded-md font-medium text-sm transition-colors shadow-md"
             >
               Get in Touch
