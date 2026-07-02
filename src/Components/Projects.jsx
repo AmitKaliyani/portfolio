@@ -92,11 +92,26 @@ function Projects() {
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {projects.map((project) => {
-              const imageUrl = project.image
-                ? (project.image.startsWith("http") || project.image.startsWith("/") || project.image.startsWith("data:"))
-                  ? project.image
-                  : `http://localhost:5000/${project.image}`
-                : null;
+              let imageUrl = null;
+              if (project.image) {
+                const isAbsoluteOrLocal = 
+                  project.image.startsWith("http") || 
+                  project.image.startsWith("/") || 
+                  project.image.startsWith("data:");
+                
+                if (isAbsoluteOrLocal) {
+                  imageUrl = project.image;
+                } else {
+                  const isLocal = typeof window !== 'undefined' && 
+                    (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
+                  
+                  const baseApi = import.meta.env.VITE_API_URL || (isLocal ? 'http://localhost:5000/api' : '');
+                  if (baseApi) {
+                    const baseBackendUrl = baseApi.replace(/\/api$/, '');
+                    imageUrl = `${baseBackendUrl}/${project.image}`;
+                  }
+                }
+              }
 
               return (
                 <div
