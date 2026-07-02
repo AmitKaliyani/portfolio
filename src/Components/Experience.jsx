@@ -4,7 +4,7 @@ function Experience() {
       role: "Full Stack MERN Developer",
       company:
         "Mentored By- SDE3 at Twillio (Ghanshyam Dobariya) / Self-Directed",
-      period: "March-2025 - Present",
+      period: "March-2026 - Present",
       bullets: [
         "Received personalized backend development mentorship from an SDE 3 at Twilio, focusing on industry best practices, scalable API design, authentication, and database architecture.",
         "Built multiple responsive web applications combining React SPA frontends with Node.js/Express.js server backends.",
@@ -27,37 +27,37 @@ function Experience() {
   ];
 
   return (
-    <section id="experience" className="py-24 bg-white">
+    <section id="experience" className="py-24 bg-[#0B0F19] text-gray-300">
       <div className="max-w-4xl mx-auto px-6">
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 tracking-tight mb-2">
+          <h2 className="text-3xl font-bold text-white tracking-tight mb-2">
             Professional Experience
           </h2>
-          <div className="h-1 w-12 bg-blue-600 rounded"></div>
+          <div className="h-1 w-12 bg-gradient-to-r from-violet-500 to-indigo-500 rounded"></div>
         </div>
 
         <div className="space-y-12">
           {experiences.map((exp) => (
             <div
               key={exp.role}
-              className="border-l-2 border-gray-100 pl-6 ml-2 relative"
+              className="border-l-2 border-slate-800 pl-6 ml-2 relative"
             >
               {/* Bullet circle dot */}
-              <div className="absolute -left-[6px] top-1.5 h-2.5 w-2.5 rounded-full bg-blue-600"></div>
+              <div className="absolute -left-[6px] top-1.5 h-2.5 w-2.5 rounded-full bg-indigo-500"></div>
 
               <div className="mb-3 flex flex-col sm:flex-row sm:items-baseline sm:justify-between">
-                <h3 className="text-xl font-semibold text-gray-900">
+                <h3 className="text-xl font-semibold text-white">
                   {exp.role}
                 </h3>
-                <span className="text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <span className="text-xs font-medium text-slate-500 uppercase tracking-wider">
                   {exp.period}
                 </span>
               </div>
-              <p className="text-sm font-medium text-gray-600 mb-4">
+              <p className="text-sm font-medium text-indigo-400 mb-4">
                 {exp.company}
               </p>
 
-              <ul className="space-y-2 text-gray-600 text-sm leading-relaxed list-disc list-inside">
+              <ul className="space-y-2 text-gray-400 text-sm leading-relaxed list-disc list-inside">
                 {exp.bullets.map((bullet, idx) => (
                   <li key={idx}>{bullet}</li>
                 ))}

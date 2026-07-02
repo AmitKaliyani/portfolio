@@ -35,18 +35,18 @@ function Skills() {
       title: "Backend Development",
       skills: [
         { name: "Node.js", icon: <SiNodedotjs className="text-[#339933]" /> },
-        { name: "Express.js", icon: <SiExpress className="text-[#000000]" /> },
+        { name: "Express.js", icon: <SiExpress className="text-white" /> },
         {
           name: "REST APIs",
           icon: (
-            <span className="text-xs font-mono font-bold bg-blue-100 text-blue-800 px-1 py-0.5 rounded">
+            <span className="text-xs font-mono font-bold bg-indigo-950/60 text-indigo-300 px-1 py-0.5 rounded border border-indigo-800/40">
               API
             </span>
           ),
         },
         {
           name: "JWT Auth",
-          icon: <SiJsonwebtokens className="text-[#000000]" />,
+          icon: <SiJsonwebtokens className="text-white bg-indigo-600 rounded-full p-[1px]" />,
         },
       ],
     },
@@ -57,7 +57,7 @@ function Skills() {
         {
           name: "Mongoose ORM",
           icon: (
-            <span className="text-xs font-mono font-bold bg-red-100 text-red-800 px-1 py-0.5 rounded">
+            <span className="text-xs font-mono font-bold bg-red-950/60 text-red-300 px-1 py-0.5 rounded border border-red-900/40">
               DB
             </span>
           ),
@@ -68,36 +68,36 @@ function Skills() {
       title: "Tools & DevOps",
       skills: [
         { name: "Git", icon: <SiGit className="text-[#F05032]" /> },
-        { name: "GitHub", icon: <SiGithub className="text-[#181717]" /> },
+        { name: "GitHub", icon: <SiGithub className="text-white" /> },
         { name: "Postman", icon: <SiPostman className="text-[#FF6C37]" /> },
       ],
     },
   ];
 
   return (
-    <section id="skills" className="py-24 bg-white">
+    <section id="skills" className="py-24 bg-[#0B0F19] text-gray-300">
       <div className="max-w-4xl mx-auto px-6">
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 tracking-tight mb-2">
+          <h2 className="text-3xl font-bold text-white tracking-tight mb-2">
             My Skillset
           </h2>
-          <div className="h-1 w-12 bg-blue-600 rounded"></div>
+          <div className="h-1 w-12 bg-gradient-to-r from-violet-500 to-indigo-500 rounded"></div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {skillCategories.map((category) => (
             <div
               key={category.title}
-              className="p-6 bg-gray-50 border border-gray-100 rounded-lg shadow-sm"
+              className="p-6 bg-[#111827] border border-slate-800/80 rounded-lg shadow-xl"
             >
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">
+              <h3 className="text-lg font-semibold text-white mb-4">
                 {category.title}
               </h3>
               <ul className="grid grid-cols-2 gap-4">
                 {category.skills.map((skill) => (
                   <li
                     key={skill.name}
-                    className="flex items-center space-x-2.5 text-gray-700 text-sm font-medium"
+                    className="flex items-center space-x-2.5 text-gray-300 text-sm font-medium"
                   >
                     <span className="text-lg flex-shrink-0">{skill.icon}</span>
                     <span>{skill.name}</span>

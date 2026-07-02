@@ -1,4 +1,4 @@
-﻿import { BrowserRouter } from 'react-router'
+import { BrowserRouter } from 'react-router'
 import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero'
 import About from './Components/About'
@@ -11,7 +11,7 @@ import Contact from './Components/Contact'
 function App() {
   return (
     <BrowserRouter>
-      <div className="bg-white min-h-screen font-sans">
+      <div className="bg-[#0B0F19] text-gray-100 min-h-screen font-sans">
         <Navbar />
         <Hero />
         <About />
