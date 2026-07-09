@@ -29,7 +29,7 @@ function Experience() {
   const experiences = [
     {
       role: "Full Stack MERN Developer",
-      company: "Mentored by SDE 3 at Twilio / Self-Directed",
+      company: "Mentored by SDE 3 at Twilio (Ghanshyam Dobariya) / Self-Directed",
       period: "Mar 2026 – Present",
       bullets: [
         "Built full-stack web applications using React, Node.js, Express, and MongoDB.",
