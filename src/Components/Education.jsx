@@ -5,7 +5,7 @@ function Education() {
       institution: "Saurashtra  University",
       period: "2025 - Running",
       description:
-        "Acquired foundational knowledge in object-oriented programming, data structures, algorithms, databases (SQL), and software engineering principles.",
+        "Acquired foundational knowledge in object-oriented programming, data structures, algorithms, databases, and software engineering principles.",
     },
     {
       degree: "Full-Stack Web Development Bootcamp",

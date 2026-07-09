@@ -1,31 +1,55 @@
 function Experience() {
+  // const experiences = [
+  //   {
+  //     role: "Full Stack MERN Developer",
+  //     company:
+  //       "Mentored By- SDE3 at Twillio (Ghanshyam Dobariya) / Self-Directed",
+  //     period: "March-2026 - Present",
+  //     bullets: [
+  //       "Received personalized backend development mentorship from an SDE 3 at Twilio, focusing on industry best practices, scalable API design, authentication, and database architecture.",
+  //       "Built multiple responsive web applications combining React SPA frontends with Node.js/Express.js server backends.",
+  //       "Structured databases utilizing MongoDB and designed complex schemas with Mongoose validation/relational referencing.",
+  //       "Integrated JWT validation and HttpOnly cookies to securely store session information and safeguard routes.",
+  //       "Deployed staging servers and integrated multer workflows to handle remote file system asset management.",
+  //     ],
+  //   },
+  //   {
+  //     role: "React Devloper (Internship)",
+  //     company: "Solvify Tech, Surat",
+  //     period: " August-2025 - February-2026",
+  //     bullets: [
+  //       "Developed and maintained Attendance Management and Task Management modules using React.js, implementing responsive user interfaces and CRUD functionality.",
+  //       "Integrated REST APIs using Axios, implemented search, filtering, pagination, and collaborated with the backend team to deliver a seamless user experience.",
+  //       "Gained practical experience by working on real-world React projects in a professional development environment.",
+  //       "Learned industry best practices, team collaboration, and the complete software development workflow while contributing to live projects.",
+  //     ],
+  //   },
+  // ];
+
   const experiences = [
     {
       role: "Full Stack MERN Developer",
-      company:
-        "Mentored By- SDE3 at Twillio (Ghanshyam Dobariya) / Self-Directed",
-      period: "March-2026 - Present",
+      company: "Mentored by SDE 3 at Twilio / Self-Directed",
+      period: "Mar 2026 – Present",
       bullets: [
-        "Received personalized backend development mentorship from an SDE 3 at Twilio, focusing on industry best practices, scalable API design, authentication, and database architecture.",
-        "Built multiple responsive web applications combining React SPA frontends with Node.js/Express.js server backends.",
-        "Structured databases utilizing MongoDB and designed complex schemas with Mongoose validation/relational referencing.",
-        "Integrated JWT validation and HttpOnly cookies to securely store session information and safeguard routes.",
-        "Deployed staging servers and integrated multer workflows to handle remote file system asset management.",
+        "Built full-stack web applications using React, Node.js, Express, and MongoDB.",
+        "Developed secure REST APIs with JWT authentication and HttpOnly cookies.",
+        "Designed scalable database schemas and backend architecture.",
+        "Deployed projects and integrated file uploads with Multer and Cloudinary.",
       ],
     },
     {
-      role: "React Devloper (Internship)",
+      role: "React Developer Intern",
       company: "Solvify Tech, Surat",
-      period: " August-2025 - February-2026",
+      period: "Aug 2025 – Feb 2026",
       bullets: [
-        "Developed and maintained Attendance Management and Task Management modules using React.js, implementing responsive user interfaces and CRUD functionality.",
-        "Integrated REST APIs using Axios, implemented search, filtering, pagination, and collaborated with the backend team to deliver a seamless user experience.",
-        "Gained practical experience by working on real-world React projects in a professional development environment.",
-        "Learned industry best practices, team collaboration, and the complete software development workflow while contributing to live projects.",
+        "Built Attendance and Task Management modules using React.",
+        "Integrated REST APIs with Axios and implemented CRUD operations.",
+        "Added search, filtering, and pagination for a better user experience.",
+        "Worked with the team on real-world projects using industry best practices.",
       ],
     },
   ];
-
   return (
     <section id="experience" className="py-24 bg-[#0B0F19] text-gray-300">
       <div className="max-w-4xl mx-auto px-6">

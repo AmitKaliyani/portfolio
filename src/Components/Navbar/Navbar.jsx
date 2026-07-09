@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { HiBars3, HiXMark } from 'react-icons/hi2';
 import { Link } from 'react-router';
+import { FaDownload } from 'react-icons/fa6';
+import Resume from '../../../public/Amit_Kaliyani_Resume.pdf'
+
 
 function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -49,6 +52,16 @@ function Navbar() {
           <a href="#contact" onClick={(e) => handleNavClick(e, 'contact')} className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-xs font-semibold shadow-md transition-colors cursor-pointer">
             <span>Contact Me</span>
           </a>
+
+          <a
+            href={Resume}
+            download="Amit_Kaliyani_Resume.pdf"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 rounded-lg border border-slate-700 px-8 py-3 font-semibold text-gray-200 transition-all duration-300 hover:border-violet-500 hover:text-white cursor-pointer"
+          >
+            <FaDownload />
+            Resume
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -79,6 +92,16 @@ function Navbar() {
             </ul>
             <a href="#contact" className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2.5 rounded-md text-xs font-semibold shadow-md transition-colors inline-block cursor-pointer" onClick={(e) => handleNavClick(e, 'contact')}>
               <span>Contact Me</span>
+            </a>
+
+            <a
+              href={Resume}
+              download="Amit_Kaliyani_Resume.pdf"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 rounded-lg border border-slate-700 px-8 py-3 font-semibold text-gray-200 transition-all duration-300 hover:border-violet-500 hover:text-white cursor-pointer"
+            >
+              <FaDownload />
+              Resume
             </a>
           </div>
         )}

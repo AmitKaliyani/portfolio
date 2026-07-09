@@ -16,6 +16,15 @@ function Hero() {
     },
   };
 
+  const techStack = [
+    "React",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "REST APIs",
+    "Tailwind Css"
+  ]
+
   const itemVariants = {
     hidden: { opacity: 0, y: 5 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
@@ -42,18 +51,14 @@ function Hero() {
           initial="hidden"
           animate="visible"
         >
-          <motion.p
-            variants={itemVariants}
-            className="text-indigo-400 font-semibold tracking-wide text-sm uppercase mb-3"
-          >
-            Available for Opportunities
-          </motion.p>
           <motion.h1
             variants={itemVariants}
-            className="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight leading-none mb-6"
+            className="text-3xl sm:text-4xl md:text-4xl font-bold text-white tracking-tight leading-none mb-6"
           >
             Hi, I am{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-indigo-400 font-extrabold">Amit Kaliyani</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-indigo-400 font-extrabold">
+              Amit Kaliyani
+            </span>
           </motion.h1>
           <motion.h2
             variants={itemVariants}
@@ -65,33 +70,21 @@ function Hero() {
             variants={itemVariants}
             className="text-gray-400 text-base sm:text-lg leading-relaxed max-w-xl mb-8"
           >
-            I build robust backend systems and clean, intuitive user interfaces.
-            Specializing in Node.js, React, Express, and MongoDB to deliver
-            performant end-to-end web applications.
+            I create modern web applications with clean designs and powerful backend systems using React, Node.js, Express, and MongoDB.
           </motion.p>
 
           <motion.div
             variants={itemVariants}
             className="flex flex-wrap justify-center md:justify-start gap-4 mb-8"
           >
-            <span className="bg-[#151D30] text-gray-300 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-800/80">
-              MongoDB
-            </span>
-            <span className="bg-[#151D30] text-gray-300 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-800/80">
-              Express.js
-            </span>
-            <span className="bg-[#151D30] text-gray-300 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-800/80">
-              React
-            </span>
-            <span className="bg-[#151D30] text-gray-300 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-800/80">
-              Node.js
-            </span>
-            <span className="bg-[#151D30] text-gray-300 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-800/80">
-              Tailwind CSS
-            </span>
-            <span className="bg-[#151D30] text-gray-300 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-800/80">
-              REST APIs
-            </span>
+
+            {techStack.map((t) => (
+
+              <span className="bg-[#151D30] text-gray-300 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-800/80">
+                {t}
+              </span>
+            ))}
+
           </motion.div>
 
           <motion.div
@@ -165,3 +158,5 @@ function Hero() {
 }
 
 export default Hero;
+
+

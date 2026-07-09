@@ -9,43 +9,112 @@ import QUOTESHUB from "../assets/Images/quotes-hub.png"
 
 
 // Fallback static projects to display if backend has no projects or is offline
+// const FALLBACK_PROJECTS = [
+//   {
+//     _id: "fallback-1",
+//     title: "Quotes Hub",
+//     description: "	 Developed a full-stack quote sharing platform using React.js, Node.js, Express.js, and MongoDB, enabling users to create, edit, delete, like, save, and explore quotes shared by the community. Built secure RESTful APIs following the MVC architecture with separate User and Admin modules, implementing JWT-based authentication, Built a dedicated Admin Panel to moderate user-generated content, enabling administrators to approve or reject submitted quotes, manage users, and monitor platform activities.",
+
+//     technologies: ["React", "Redux Toolkit", "React Router", "Tailwind CSS", "Node js", "Express js", "MongoDB", "JWT"],
+//     githubLink: "https://github.com/AmitKaliyani",
+//     liveLink: "https://quote-frontend-ten.vercel.app",
+//     image: QUOTESHUB, // fallback will render mock gradient/placeholder
+//   },
+//   {
+//     _id: "fallback-2",
+//     title: "AkShop",
+//     description:
+//       "Developed a fully responsive e-commerce application using React.js with a component-based architecture for a seamless shopping experience across desktop and mobile devices. Implemented core e-commerce features including, product search, category filtering, shopping cart, and checkout workflow.Managed global application state using Redux Toolkit for cart.",
+//     technologies: ["React", "Redux Toolkit", "React Router", "Tailwind CSS"],
+//     githubLink: "https://github.com/AmitKaliyani",
+//     liveLink: "https://ak-shop-e-commerce-6a2k.vercel.app/",
+//     image: AKSHOP, // fallback will render mock gradient/placeholder
+//   },
+//   {
+//     _id: "fallback-3",
+//     title: "WeatherApp",
+//     description:
+//       "Developed a simple weather application using React.js that allows users to search for weather information by city name. Integrated a Weather API to fetch and display real-time weather details such as temperature, weather condition, humidity, and wind speed. Designed a clean and responsive user interface using Tailwind CSS for a seamless experience across different devices.",
+//     technologies: ["React", "Tailwind CSS", "OpenWeather API", "JavaScript"],
+//     githubLink: "https://github.com/AmitKaliyani",
+//     liveLink: "https://weather-app-eta-sandy-33.vercel.app/",
+//     image: WEATHER,
+//   },
+//   {
+//     _id: "fallback-4",
+//     title: "TodoApp",
+//     description:
+//       "Developed a responsive Todo application using React.js with a component-based architecture for efficient task management. Implemented complete CRUD functionality, allowing users to add, edit, delete, and manage task seamlessly. Utilized Local Storage to persist todo data, ensuring tasks remain available across browser sessions.",
+//     technologies: ["React", "CSS Modules", "LocalStorage"],
+//     githubLink: "https://github.com/AmitKaliyani",
+//     liveLink: "https://todo-app-puce-omega.vercel.app/",
+//     image: TODO,
+//   },
+// ];
+
+
 const FALLBACK_PROJECTS = [
   {
     _id: "fallback-1",
     title: "Quotes Hub",
-    description: "	 Developed a full-stack quote sharing platform using React.js, Node.js, Express.js, and MongoDB, enabling users to create, edit, delete, like, save, and explore quotes shared by the community. Built secure RESTful APIs following the MVC architecture with separate User and Admin modules, implementing JWT-based authentication, Built a dedicated Admin Panel to moderate user-generated content, enabling administrators to approve or reject submitted quotes, manage users, and monitor platform activities.",
-
-    technologies: ["React", "Redux Toolkit", "React Router", "Tailwind CSS", "Node js", "Express js", "MongoDB", "JWT"],
+    description:
+      "A full-stack quote sharing platform with authentication, admin panel, and CRUD features.",
+    technologies: [
+      "React",
+      "Redux Toolkit",
+      "React Router",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+    ],
     githubLink: "https://github.com/AmitKaliyani",
     liveLink: "https://quote-frontend-ten.vercel.app",
-    image: QUOTESHUB, // fallback will render mock gradient/placeholder
+    HLD: "https://github.com/AmitKaliyani/06_quote_backend/blob/main/Readme.md",
+
+    image: QUOTESHUB,
   },
   {
     _id: "fallback-2",
     title: "AkShop",
     description:
-      "Developed a fully responsive e-commerce application using React.js with a component-based architecture for a seamless shopping experience across desktop and mobile devices. Implemented core e-commerce features including, product search, category filtering, shopping cart, and checkout workflow.Managed global application state using Redux Toolkit for cart.",
-    technologies: ["React", "Redux Toolkit", "React Router", "Tailwind CSS"],
+      "A responsive e-commerce application with product search, cart, and checkout features.",
+    technologies: [
+      "React",
+      "Redux Toolkit",
+      "React Router",
+      "Tailwind CSS",
+    ],
     githubLink: "https://github.com/AmitKaliyani",
     liveLink: "https://ak-shop-e-commerce-6a2k.vercel.app/",
-    image: AKSHOP, // fallback will render mock gradient/placeholder
+    image: AKSHOP,
   },
   {
     _id: "fallback-3",
-    title: "WeatherApp",
+    title: "Weather App",
     description:
-      "Developed a simple weather application using React.js that allows users to search for weather information by city name. Integrated a Weather API to fetch and display real-time weather details such as temperature, weather condition, humidity, and wind speed. Designed a clean and responsive user interface using Tailwind CSS for a seamless experience across different devices.",
-    technologies: ["React", "Tailwind CSS", "OpenWeather API", "JavaScript"],
+      "A weather application that displays real-time weather information using the OpenWeather API.",
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "OpenWeather API",
+      "JavaScript",
+    ],
     githubLink: "https://github.com/AmitKaliyani",
     liveLink: "https://weather-app-eta-sandy-33.vercel.app/",
     image: WEATHER,
   },
   {
     _id: "fallback-4",
-    title: "TodoApp",
+    title: "Todo App",
     description:
-      "Developed a responsive Todo application using React.js with a component-based architecture for efficient task management. Implemented complete CRUD functionality, allowing users to add, edit, delete, and manage task seamlessly. Utilized Local Storage to persist todo data, ensuring tasks remain available across browser sessions.",
-    technologies: ["React", "CSS Modules", "LocalStorage"],
+      "A simple task management application with CRUD operations and Local Storage support.",
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "LocalStorage",
+    ],
     githubLink: "https://github.com/AmitKaliyani",
     liveLink: "https://todo-app-puce-omega.vercel.app/",
     image: TODO,
@@ -94,17 +163,17 @@ function Projects() {
             {projects.map((project) => {
               let imageUrl = null;
               if (project.image) {
-                const isAbsoluteOrLocal = 
-                  project.image.startsWith("http") || 
-                  project.image.startsWith("/") || 
+                const isAbsoluteOrLocal =
+                  project.image.startsWith("http") ||
+                  project.image.startsWith("/") ||
                   project.image.startsWith("data:");
-                
+
                 if (isAbsoluteOrLocal) {
                   imageUrl = project.image;
                 } else {
-                  const isLocal = typeof window !== 'undefined' && 
+                  const isLocal = typeof window !== 'undefined' &&
                     (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
-                  
+
                   const baseApi = import.meta.env.VITE_API_URL || (isLocal ? 'http://localhost:5000/api' : '');
                   if (baseApi) {
                     const baseBackendUrl = baseApi.replace(/\/api$/, '');
@@ -193,6 +262,17 @@ function Projects() {
                         >
                           <FaExternalLinkAlt />
                           <span>Live Demo</span>
+                        </a>
+                      )}
+                      {project.HLD && (
+                        <a
+                          href={project.HLD}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center space-x-1.5 text-xs text-gray-400 hover:text-indigo-400 font-medium transition-colors"
+                        >
+                          <FaExternalLinkAlt />
+                          <span>HLD</span>
                         </a>
                       )}
                     </div>

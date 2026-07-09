@@ -12,34 +12,20 @@ function About() {
             </h2>
             <div className="h-1 w-12 bg-gradient-to-r from-violet-500 to-indigo-500 rounded"></div>
           </div>
+          <div className="md:w-2/3 space-y-2 text-gray-300 leading-relaxed text-base sm:text-lg">
+            <p>
+              I'm a Full Stack MERN Developer who enjoys building modern, responsive, and
+              user-friendly web applications.
+            </p>
 
-          <div className="md:w-2/3 space-y-6 text-gray-300 leading-relaxed text-base sm:text-lg">
             <p>
-              I am a results-oriented **Full Stack Developer** specializing in
-              the MERN stack. My passion lies in constructing clean,
-              maintainable web architectures that are performant and
-              user-centric.
+              I work with React, Node.js, Express.js, MongoDB, Tailwind CSS, and REST APIs
+              to create scalable solutions.
             </p>
+
             <p>
-              Having worked across client-side interfaces and backend logic, I
-              bring a solid understanding of APIs, server optimization, database
-              management, and asynchronous flows. I enjoy solving complex
-              structural challenges and writing elegant, readable code.
-            </p>
-            <p>
-              I focus heavily on clean RESTful API design, database modeling,
-              secure JWT authentication mechanisms, and reliable file uploading
-              systems. In the frontend, I utilize React paired with Tailwind CSS
-              to build fluid interfaces that scale.
-            </p>
-            <p className="font-bold text-white">
-              Solved 120+ Data Structures and Algorithms (DSA) problems on
-              LeetCode, strengthening problem-solving and algorithmic thinking.
-            </p>
-            <p className="text-gray-100 font-medium">
-              When I am not coding, I am exploring new web architectures,
-              contributing to open-source codebases, or learning about system
-              designs.
+              I have solved <span className="font-semibold text-white">120+ LeetCode problems</span> and
+              enjoy learning new technologies while improving my development skills.
             </p>
           </div>
         </div>
